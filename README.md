@@ -25,6 +25,7 @@
 
 | Project | What It Does | Core Stack | Headline Result |
 |---|---|---|---|
+| 🚨 **[Complaint Early-Warning System](https://github.com/Raakeshmenona/complaint-early-warning-system)** | Detects conduct-risk incidents at banks from 4.7M real CFPB complaints, backtested point-in-time | Kafka / Event Hubs · Delta Lake · PySpark · Snowflake · dbt · Airflow · Power BI | 8/11 incidents caught, 29 days ahead of monthly MIS |
 | 🏥 **[FHIR Clinical Lakehouse](https://github.com/Raakeshmenona/fhir-clinical-lakehouse)** | Privacy-preserving patient record linkage across organizations, no raw PII shared | PySpark · Delta Lake · Snowflake · Bloom Filters (PPRL) · Power BI | 97.5% match recall @ 100% precision |
 | ⚙️ **[ETL Modernization Framework](https://github.com/Raakeshmenona/etl-modernization-framework)** | LLM-augmented legacy Perl/SQL → Python translation with behavioral equivalence proof | Python · Claude API · sqlglot · Great Expectations · Airflow | 85.7% auto-translation, 99.63% equivalence |
 | 🏦 **[Banking Regulatory Platform](https://github.com/Raakeshmenona/banking-regulatory-platform)** | Multi-source reconciliation and Basel III / RBI compliance reporting | Databricks · Delta Lake · ADLS Gen2 · Event Hubs · Power BI | T+1 → sub-30 min cycle, 98%+ break detection |
@@ -171,6 +172,8 @@
 
 | Project | Metric | Result |
 |---|---|---|
+| **Complaint Early-Warning** | Labelled incidents detected | **8 / 11** (median 9.5 days after onset) |
+| | Lead over monthly MIS | **29 days** (median) |
 | **FHIR Clinical Lakehouse** | Match recall / precision | **97.5% / 100%** |
 | | Data quality score | **98.9–99.7%** |
 | **ETL Modernization** | Auto-translation rate | **85.7%** |
