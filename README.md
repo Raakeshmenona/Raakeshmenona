@@ -25,6 +25,7 @@
 
 | Project | What It Does | Core Stack | Headline Result |
 |---|---|---|---|
+| 🛡️ **[Training-Data Intake Gate](https://github.com/Raakeshmenona/training-data-intake-gate)** | Decides whether open datasets are safe to fine-tune on — licence lineage, benchmark contamination, PII and duplicates across 1.77M Hugging Face records · [live report](https://raakeshmenona.github.io/training-data-intake-gate/) | PySpark · Delta Lake · Spark SQL · MinHash LSH · GitHub Actions | Traced 94% of a "CC-BY-4.0" dataset to a non-commercial source; 70 test items found in training data |
 | 🚨 **[Complaint Early-Warning System](https://github.com/Raakeshmenona/complaint-early-warning-system)** | Detects conduct-risk incidents at banks from 4.7M real CFPB complaints, backtested point-in-time | Kafka / Event Hubs · Delta Lake · PySpark · Snowflake · dbt · Airflow · Power BI | 8/11 incidents caught, 29 days ahead of monthly MIS |
 | 🏥 **[FHIR Clinical Lakehouse](https://github.com/Raakeshmenona/fhir-clinical-lakehouse)** | Privacy-preserving patient record linkage across organizations, no raw PII shared | PySpark · Delta Lake · Snowflake · Bloom Filters (PPRL) · Power BI | 97.5% match recall @ 100% precision |
 | ⚙️ **[ETL Modernization Framework](https://github.com/Raakeshmenona/etl-modernization-framework)** | LLM-augmented legacy Perl/SQL → Python translation with behavioral equivalence proof | Python · Claude API · sqlglot · Great Expectations · Airflow | 85.7% auto-translation, 99.63% equivalence |
@@ -172,6 +173,8 @@
 
 | Project | Metric | Result |
 |---|---|---|
+| **Training-Data Intake Gate** | Licence lineage checked against independent labels | **91%** agreement on 97,671 traced rows |
+| | Benchmark test items found in training data | **70** (MMLU, GSM8K) — 29/30 confirmed by hand |
 | **Complaint Early-Warning** | Labelled incidents detected | **8 / 11** (median 9.5 days after onset) |
 | | Lead over monthly MIS | **29 days** (median) |
 | **FHIR Clinical Lakehouse** | Match recall / precision | **97.5% / 100%** |
