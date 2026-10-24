@@ -12,7 +12,7 @@
 
 ## 🎯 About Me
 
-- 🔭 **Senior Data Engineer with 4+ years** delivering ETL modernization, cloud analytics, and lakehouse platforms across **Banking, Semiconductor, Aerospace, and Healthcare**
+- 🔭 **Senior Data Engineer with ~5 years** delivering ETL modernization, cloud analytics, and lakehouse platforms across **Banking, Semiconductor, Aerospace, and Healthcare**
 - 🏗️ **Architecting** end-to-end pipelines — ingestion → distributed processing → warehouse → ML → BI
 - 🌱 **Specializing in** Snowflake, PySpark, Azure/Databricks, workflow orchestration, and data quality engineering
 - 🤖 **Building** predictive and analytical models for demand forecasting, defect correlation, and risk scoring
